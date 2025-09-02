@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - By Lacey Richter</title>
+    <meta name="description" content="Get in touch with Lacey Richter to discuss your photography session. Available for couples, families, portraits, and commercial projects.">
+    
+    <!-- Open Graph tags -->
+    <meta property="og:title" content="Contact - By Lacey Richter">
+    <meta property="og:description" content="Get in touch to discuss your photography session">
+    <meta property="og:image" content="/images/WEBSITE_COVER_PHOTO.jpg">
+    <meta property="og:type" content="website">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header" id="header">
+        <div class="header-container">
+            <div class="logo">
+                <a href="index.html">By Lacey Richter</a>
+            </div>
+            <nav class="nav" id="nav">
+                <ul class="nav-list">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="portfolio.html" class="nav-link">Portfolio</a></li>
+                    <li><a href="about.html" class="nav-link">About</a></li>
+                    <li><a href="investment.html" class="nav-link">Investment</a></li>
+                    <li><a href="contact.html" class="nav-link active">Contact</a></li>
+                </ul>
+            </nav>
+            <button class="mobile-menu-toggle" id="mobile-menu-toggle" aria-label="Toggle mobile menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Page Content -->
+    <section class="page-content" style="margin-top: 80px;">
+        <div class="container">
+            
+            <!-- Header Section -->
+            <div class="section-header">
+                <h1>Let's Connect</h1>
+                <div class="section-divider"></div>
+                <p style="max-width: 600px; margin: 0 auto;">I'm so excited to learn about your vision and discuss how we can create something beautiful together. Please fill out the form below and I'll get back to you within 24 hours.</p>
+            </div>
+            
+            <!-- Contact Form -->
+            <div style="max-width: 800px; margin: 4rem auto;">
+                
+                <!-- Success Message (initially hidden) -->
+                <div id="form-success" class="form-success hidden">
+                    <p><strong>Thank you for your message!</strong><br>
+                    I've received your inquiry and will get back to you within 24 hours. I'm excited to learn more about your vision!</p>
+                </div>
+                
+                <form id="contact-form" class="contact-form">
+                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem;">
+                        <div class="form-group">
+                            <label for="firstName">First Name *</label>
+                            <input type="text" id="firstName" name="firstName" required>
+                            <div class="form-error" id="firstName-error"></div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="lastName">Last Name *</label>
+                            <input type="text" id="lastName" name="lastName" required>
+                            <div class="form-error" id="lastName-error"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email Address *</label>
+                        <input type="email" id="email" name="email" required>
+                        <div class="form-error" id="email-error"></div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" name="phone">
+                        <div class="form-error" id="phone-error"></div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="sessionType">Session Type *</label>
+                        <select id="sessionType" name="sessionType" required style="width: 100%; padding: 1rem; border: 1px solid #EAE7E0; border-radius: 8px; font-size: 1rem; font-family: inherit; background-color: white;">
+                            <option value="">Please select...</option>
+                            <option value="couples">Couples & Engagement</option>
+                            <option value="portraits">Individual Portraits</option>
+                            <option value="family">Family & Maternity</option>
+                            <option value="commercial">Brand & Commercial</option>
+                            <option value="other">Other (please specify in message)</option>
+                        </select>
+                        <div class="form-error" id="sessionType-error"></div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="eventDate">Preferred Session Date</label>
+                        <input type="date" id="eventDate" name="eventDate" style="width: 100%; padding: 1rem; border: 1px solid #EAE7E0; border-radius: 8px; font-size: 1rem; font-family: inherit; background-color: white;">
+                        <div class="form-error" id="eventDate-error"></div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="budget">Budget Range</label>
+                        <select id="budget" name="budget" style="width: 100%; padding: 1rem; border: 1px solid #EAE7E0; border-radius: 8px; font-size: 1rem; font-family: inherit; background-color: white;">
+                            <option value="">Please select...</option>
+                            <option value="under-500">Under $500</option>
+                            <option value="500-750">$500 - $750</option>
+                            <option value="750-1000">$750 - $1,000</option>
+                            <option value="1000-1500">$1,000 - $1,500</option>
+                            <option value="1500-plus">$1,500+</option>
+                            <option value="discuss">Let's discuss</option>
+                        </select>
+                        <div class="form-error" id="budget-error"></div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message">Tell me about your vision *</label>
+                        <textarea id="message" name="message" required placeholder="I'd love to hear about what you're envisioning for your session, any special details I should know about, and what drew you to my work. The more you share, the better I can understand your needs!"></textarea>
+                        <div class="form-error" id="message-error"></div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="howHeard">How did you hear about me?</label>
+                        <select id="howHeard" name="howHeard" style="width: 100%; padding: 1rem; border: 1px solid #EAE7E0; border-radius: 8px; font-size: 1rem; font-family: inherit; background-color: white;">
+                            <option value="">Please select...</option>
+                            <option value="instagram">Instagram</option>
+                            <option value="google">Google Search</option>
+                            <option value="referral">Friend/Family Referral</option>
+                            <option value="pinterest">Pinterest</option>
+                            <option value="website">Photography Website/Blog</option>
+                            <option value="vendor">Wedding Vendor</option>
+                            <option value="other">Other</option>
+                        </select>
+                        <div class="form-error" id="howHeard-error"></div>
+                    </div>
+                    
+                    <div style="text-align: center; margin-top: 2rem;">
+                        <button type="submit" class="btn btn-primary" id="submit-btn">Send Message</button>
+                    </div>
+                </form>
+            </div>
+            
+            <!-- Additional Contact Information -->
+            <div class="contact-info" style="margin-top: 6rem;">
+                <div class="feature-grid">
+                    <div class="feature-card" data-aos="fade-up">
+                        <div class="feature-content">
+                            <h3>Response Time</h3>
+                            <p>I typically respond to all inquiries within 24 hours. If you have an urgent request, please mention it in your message!</p>
+                        </div>
+                    </div>
+                    
+                    <div class="feature-card" data-aos="fade-up" data-aos-delay="100">
+                        <div class="feature-content">
+                            <h3>Booking Timeline</h3>
+                            <p>I recommend booking 4-8 weeks in advance for regular sessions. For popular dates and seasons, earlier booking is encouraged.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="feature-card" data-aos="fade-up" data-aos-delay="200">
+                        <div class="feature-content">
+                            <h3>What Happens Next</h3>
+                            <p>After your inquiry, we'll schedule a consultation call to discuss your vision, finalize details, and secure your date with a booking contract.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Can't Wait to Hear From You!</h2>
+                <p>Whether you're planning an engagement session, celebrating a milestone, or need commercial photography, I'm here to bring your vision to life.</p>
+                <p style="margin-top: 1rem;"><strong>Email:</strong> <a href="mailto:hello@bylaceyrichter.com" style="color: #D9B24C;">hello@bylaceyrichter.com</a></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-bio">
+                    <p>Photographer based in [Location], capturing life's most meaningful moments with an editorial eye and heartfelt approach.</p>
+                </div>
+                <div class="footer-social">
+                    <a href="https://instagram.com/bylaceyrichter" target="_blank" rel="noopener noreferrer" aria-label="Instagram">Instagram</a>
+                    <a href="https://pinterest.com/bylaceyrichter" target="_blank" rel="noopener noreferrer" aria-label="Pinterest">Pinterest</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 By Lacey Richter. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

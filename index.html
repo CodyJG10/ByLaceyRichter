@@ -1,16 +1,195 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <title>replit</title>
-  <link href="style.css" rel="stylesheet" type="text/css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>By Lacey Richter - Photography</title>
+    <meta name="description" content="Capturing silent stories through elegant photography. Wedding, portrait, and lifestyle photographer specializing in intimate moments.">
+    
+    <!-- Open Graph tags -->
+    <meta property="og:title" content="By Lacey Richter - Photography">
+    <meta property="og:description" content="Capturing silent stories through elegant photography">
+    <meta property="og:image" content="/images/WEBSITE_COVER_PHOTO.jpg">
+    <meta property="og:type" content="website">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="css/style.css">
+    
+    <!-- JSON-LD Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Lacey Richter",
+        "jobTitle": "Photographer",
+        "description": "Professional photographer specializing in weddings, portraits, and lifestyle photography",
+        "url": "https://bylaceyrichter.com"
+    }
+    </script>
 </head>
-
 <body>
-  Hello world
-  <script src="script.js"></script>
-</body>
+    <!-- Header -->
+    <header class="header" id="header">
+        <div class="header-container">
+            <div class="logo">
+                <a href="index.html">By Lacey Richter</a>
+            </div>
+            <nav class="nav" id="nav">
+                <ul class="nav-list">
+                    <li><a href="index.html" class="nav-link active">Home</a></li>
+                    <li><a href="portfolio.html" class="nav-link">Portfolio</a></li>
+                    <li><a href="about.html" class="nav-link">About</a></li>
+                    <li><a href="investment.html" class="nav-link">Investment</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+            <button class="mobile-menu-toggle" id="mobile-menu-toggle" aria-label="Toggle mobile menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
 
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-image">
+            <img src="images/WEBSITE_COVER_PHOTO.jpg" alt="Lacey Richter Photography" loading="eager">
+        </div>
+        <div class="hero-overlay">
+            <div class="hero-content">
+                <h1 class="hero-title">capturing silent stories</h1>
+                <div class="hero-actions">
+                    <a href="portfolio.html" class="btn btn-primary">View Portfolio</a>
+                    <a href="contact.html" class="btn btn-secondary">Get In Touch</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Feature Strips -->
+    <section class="feature-strips">
+        <div class="container">
+            <div class="feature-grid">
+                <div class="feature-card" data-aos="fade-up">
+                    <div class="feature-image">
+                        <img src="images/Couple_cover_pic.jpg" alt="Couples Photography" loading="lazy">
+                    </div>
+                    <div class="feature-content">
+                        <h3>Couples</h3>
+                        <p>Intimate moments between two hearts, captured with authentic emotion and timeless elegance.</p>
+                        <a href="portfolio.html#couples" class="feature-link">Explore Couples →</a>
+                    </div>
+                </div>
+                
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="feature-image">
+                        <img src="images/Portrait.jpg" alt="Portrait Photography" loading="lazy">
+                    </div>
+                    <div class="feature-content">
+                        <h3>Portraits</h3>
+                        <p>Personal narratives told through thoughtful composition and natural light.</p>
+                        <a href="portfolio.html#portraits" class="feature-link">View Portraits →</a>
+                    </div>
+                </div>
+                
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="feature-image">
+                        <img src="images/Maternity.jpg" alt="Family Photography" loading="lazy">
+                    </div>
+                    <div class="feature-content">
+                        <h3>Families & Maternity</h3>
+                        <p>Life's most precious chapters documented with warmth and genuine connection.</p>
+                        <a href="portfolio.html#families" class="feature-link">See Families →</a>
+                    </div>
+                </div>
+                
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="feature-image">
+                        <img src="images/Brand.jpg" alt="Commercial Photography" loading="lazy">
+                    </div>
+                    <div class="feature-content">
+                        <h3>Brands & Commercial</h3>
+                        <p>Elevated brand storytelling through refined visual narratives.</p>
+                        <a href="portfolio.html#commercial" class="feature-link">Brand Work →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials" id="kind-words">
+        <div class="container">
+            <div class="section-header">
+                <h2>Kind Words</h2>
+                <div class="section-divider"></div>
+            </div>
+            
+            <div class="testimonials-carousel" id="testimonials-carousel">
+                <div class="testimonial-slide active">
+                    <blockquote>
+                        <p>"Lacey has an incredible eye for capturing the most authentic, beautiful moments. Our wedding photos are absolutely stunning and tell our story perfectly."</p>
+                        <cite>— Sarah & Michael</cite>
+                    </blockquote>
+                </div>
+                
+                <div class="testimonial-slide">
+                    <blockquote>
+                        <p>"Working with Lacey was such a dream. She made us feel so comfortable and natural, and the photos turned out better than we ever imagined."</p>
+                        <cite>— Emma Chen</cite>
+                    </blockquote>
+                </div>
+                
+                <div class="testimonial-slide">
+                    <blockquote>
+                        <p>"Lacey captured our family perfectly. The photos are timeless and full of emotion. We'll treasure them forever."</p>
+                        <cite>— The Johnson Family</cite>
+                    </blockquote>
+                </div>
+            </div>
+            
+            <div class="testimonial-nav">
+                <button class="testimonial-dot active" data-slide="0"></button>
+                <button class="testimonial-dot" data-slide="1"></button>
+                <button class="testimonial-dot" data-slide="2"></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Let's Create Something Beautiful Together</h2>
+                <p>Ready to capture your story? I'd love to hear about your vision and create timeless memories together.</p>
+                <a href="contact.html" class="btn btn-primary">Start Your Journey</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-bio">
+                    <p>Photographer based in [Location], capturing life's most meaningful moments with an editorial eye and heartfelt approach.</p>
+                </div>
+                <div class="footer-social">
+                    <a href="https://instagram.com/bylaceyrichter" target="_blank" rel="noopener noreferrer" aria-label="Instagram">Instagram</a>
+                    <a href="https://pinterest.com/bylaceyrichter" target="_blank" rel="noopener noreferrer" aria-label="Pinterest">Pinterest</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 By Lacey Richter. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
 </html>
