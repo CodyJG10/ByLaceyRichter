@@ -1,0 +1,145 @@
+# Build a modern, single‑repo photographer portfolio for **Lacey Richter**
+
+You are an expert front‑end developer and designer. Generate a production‑ready website using **static HTML, CSS, and JavaScript** (no frameworks). Keep the code clean, modular, and accessible. Optimize images and ship a cohesive, elegant aesthetic inspired by the reference sites listed below.
+
+---
+
+## References for style (inspiration only)
+
+* [https://www.bysofiaconte.com](https://www.bysofiaconte.com)
+* [https://kennymarshallphotography.com/](https://kennymarshallphotography.com/)
+* [https://www.studiokfilm.com/](https://www.studiokfilm.com/)
+
+**Direction to follow from these references:**
+
+* Full‑bleed hero imagery with tasteful, thin typography and ample white space.
+* Subtle motion on scroll (fade/slide, parallax on hero only, low intensity) using vanilla JavaScript + CSS transitions.
+* Editorial layout for portfolio grid (masonry with varied item sizes), edge‑to‑edge.
+* Minimal color palette, monochrome with a warm accent.
+* Delicate separators, soft shadows, rounded‑2xl cards, generous padding.
+
+---
+
+## Assets (these image file names already exist in the repo)
+
+> Place these in `/images/` and reference appropriately. Use exactly these filenames.
+
+* `WEBSITE_COVER_PHOTO.jpg`  → Home hero background
+* `Lacey.jpg`                → About page portrait
+* `Couple_cover_pic.jpg`     → Use in Couples section card and as section header image
+* `Brand.jpg`                → Brands/Commercial card
+* `Maternity.jpg`            → Families & Maternity card and section header image
+* `Portrait.jpg`             → Portraits card and section header image
+* **Portfolio gallery set:** multiple files named like `portfolio.jpg`, `portfolio (2).jpg`, `portfolio (3).jpg`, ...  → Use across the Portfolio masonry grid.
+
+**Do not rename these files.** Ensure responsive `object-fit: cover`, intrinsic sizing, and lazy loading.
+
+---
+
+## Brand & Style
+
+* **Site title:** By Lacey Richter
+* **Tagline (hero overlay):** “capturing silent stories”
+* **Type:**
+
+  * Display: `"Cormorant Garamond"` or `"Playfair Display"` for headings (thin/light variants for elegance)
+  * Body: `"Inter"` or `"Source Sans 3"`
+* **Palette:**
+
+  * Background: `#FAFAF7` (warm off‑white)
+  * Text primary: `#1C1C1A`
+  * Accent: muted mustard `#D9B24C`
+  * Lines: `#EAE7E0`
+* **UI motion:** Use CSS transitions/animations with durations 250–400ms; no heavy parallax.
+* **Aesthetic:** airy, editorial, tactile.
+
+---
+
+## Information Architecture & Pages
+
+Each page is its own static `.html` file. Use consistent header, footer, and styling via shared `style.css` and `script.js`.
+
+* `index.html` (Home)
+* `portfolio.html`
+* `about.html`
+* `investment.html`
+* `contact.html`
+
+Global header with logo (wordmark) left and nav right. Sticky on scroll with subtle translucent background blur. Global footer with social links and mini‑bio line.
+
+---
+
+## Page Specifications & Copy
+
+(Keep same text content as already detailed: Home hero, feature strips, testimonials, portfolio masonry grid, About copy, Investment pricing cards, Contact form, etc.)
+
+---
+
+## Global Components & UX
+
+* **Header**: wordmark “By Lacey Richter”; nav links; hover underline animation; mobile menu (slide‑down with JS toggle).
+* **Footer**: mini‑bio line; © year; links to **Instagram** and **Pinterest**.
+* **Buttons**: slim, pill‑ish, subtle accent border.
+* **Lightbox**: implemented with vanilla JS; keyboard navigation and escape to close.
+* **Testimonials carousel**: auto‑advance with pause on hover; vanilla JS.
+
+---
+
+## Technical Requirements
+
+* **Stack**: static HTML, CSS, and JavaScript only.
+* **File structure:**
+
+```
+index.html
+portfolio.html
+about.html
+investment.html
+contact.html
+/css/style.css
+/js/script.js
+/images/* (all assets)
+```
+
+* **Images**: lazy load non‑critical; set width/height; CSS `aspect-ratio` for consistency.
+* **SEO**: set `<title>` and meta description per page; Open Graph tags; JSON‑LD `Person` schema.
+* **Performance**: compress images; minify CSS/JS.
+* **Accessibility**: semantic landmarks; form labels tied to inputs; aria attributes.
+
+---
+
+## Form Handling
+
+* Contact form uses basic JS validation for required fields.
+* On submit: prevent default, show a success message inline (mock only).
+* Leave clear `// TODO:` comment where backend integration can be added.
+
+---
+
+## Deliverables
+
+1. Fully working static site with HTML, CSS, and JS.
+2. Pixel‑perfect pages and responsive layout.
+3. SEO tags and Open Graph image using `WEBSITE_COVER_PHOTO.jpg`.
+4. Accessibility pass.
+5. Instructions in `README.md` for adding portfolio images and deploying.
+
+---
+
+## Nice‑to‑Have (if time allows)
+
+* Simple color‑grade overlay on portfolio hover.
+* Smooth scroll to `#kind-words` from Home.
+
+---
+
+## Acceptance Criteria
+
+* All specified images are used in their intended sections.
+* Hero looks refined with elegant type; CTAs function.
+* Portfolio grid loads and opens images in lightbox.
+* Contact form validates and shows success message.
+* Pricing cards match copy and allow linking from Investment to Contact.
+* Mobile layout is excellent (header, cards, grids, lightbox).
+
+> Build now using the above requirements. Keep the codebase tidy and documented with brief inline comments.
