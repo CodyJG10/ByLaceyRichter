@@ -10,7 +10,6 @@ document.addEventListener('DOMContentLoaded', function() {
     initializeLightbox();
     initializeContactForm();
     initializeScrollAnimations();
-    initializeParallax();
 });
 
 // Header scroll behavior
@@ -337,25 +336,6 @@ function initializeScrollAnimations() {
     });
 }
 
-// Subtle parallax effect for hero only
-function initializeParallax() {
-    const hero = document.getElementById('hero');
-    const heroImage = hero ? hero.querySelector('.hero-image img') : null;
-    
-    if (!hero || !heroImage) return;
-    
-    window.addEventListener('scroll', function() {
-        const scrolled = window.pageYOffset;
-        const heroHeight = hero.offsetHeight;
-        const heroTop = hero.offsetTop;
-        
-        // Only apply parallax when hero is in view
-        if (scrolled < heroHeight + heroTop) {
-            const yPos = -(scrolled * 0.3); // Subtle parallax effect
-            heroImage.style.transform = `translateY(${yPos}px)`;
-        }
-    });
-}
 
 // Smooth scroll for internal links
 document.addEventListener('click', function(e) {
